@@ -21,7 +21,7 @@ public class SeleniumTest {
 
     @BeforeClass
     public static void start() {
-        final String webDriverPath =  "driver/chromedriver.exe";
+        final String webDriverPath =  "driver/chromedriver";
         System.setProperty("webdriver.chrome.driver", webDriverPath);
     }
 
@@ -44,7 +44,7 @@ public class SeleniumTest {
     @Test
     public void test() throws InterruptedException {
         
-    	driver.get("http://192.168.2.10:8080");
+    	driver.get("http://192.168.4.30:8089");
     	
     	assertTrue(driver.getTitle().equalsIgnoreCase("Spring Demo Project"));
 
