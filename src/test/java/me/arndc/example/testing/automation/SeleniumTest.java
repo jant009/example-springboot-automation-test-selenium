@@ -46,7 +46,7 @@ public class SeleniumTest {
         
     	driver.get("http://192.168.4.30:8089");
     	
-    	assertTrue(driver.getTitle().equalsIgnoreCase("Spring Demo Project"));
+    	assertTrue(driver.getTitle().equalsIgnoreCase("yes"));
 
     }
 
